@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raciocínio Lógico - TJSP 2027</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-logo">
+                <div class="logo-icon">TJ</div>
+                <div class="header-title">
+                    <h1>TJSP 2027</h1>
+                    <p>Estudo para Concurso</p>
+                </div>
+            </div>
+            <div class="header-info">
+                <div class="concurso">Tribunal de Justiça de São Paulo</div>
+                <div class="ano">Edição 2027</div>
+            </div>
+            <div class="header-badge">Preparação Ativa</div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+        <div class="nav-content">
+            <div class="nav-item"><a href="../index.html"><span class="nav-icon">&#127968;</span> Início</a></div>
+            <div class="nav-item"><a href="portugues.html"><span class="nav-icon">&#128214;</span> Português</a></div>
+            <div class="nav-item"><a href="logica.html" class="active"><span class="nav-icon">&#129504;</span> Lógica</a></div>
+            <div class="nav-item"><a href="constitucional.html"><span class="nav-icon">&#9878;</span> Constitucional</a></div>
+            <div class="nav-item"><a href="administrativo.html"><span class="nav-icon">&#127963;</span> Administrativo</a></div>
+            <div class="nav-item"><a href="penal.html"><span class="nav-icon">&#9888;</span> Penal</a></div>
+            <div class="nav-item"><a href="processual-penal.html"><span class="nav-icon">&#128220;</span> Processo Penal</a></div>
+            <div class="nav-item"><a href="civil.html"><span class="nav-icon">&#128196;</span> Civil</a></div>
+            <div class="nav-item"><a href="processual-civil.html"><span class="nav-icon">&#128221;</span> Processo Civil</a></div>
+            <div class="nav-item"><a href="trabalho.html"><span class="nav-icon">&#128188;</span> Trabalho</a></div>
+            <div class="nav-item"><a href="tributario.html"><span class="nav-icon">&#128176;</span> Tributário</a></div>
+            <div class="nav-item"><a href="informatica.html"><span class="nav-icon">&#128187;</span> Informática</a></div>
+            <div class="nav-item"><a href="simulados.html"><span class="nav-icon">&#128203;</span> Simulados</a></div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h2>&#129504; Raciocínio Lógico</h2>
+            <p>Lógica proposicional, sequências, diagramas e problemas</p>
+            <div class="breadcrumb"><a href="../index.html">Início</a> / Raciocínio Lógico</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">10</div>
+                <div class="stat-label">Questões na prova</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8h</div>
+                <div class="stat-label">Estudo semanal</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Tópicos essenciais</div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>&#9919; Proposições e Conectivos Lógicos</h3>
+            <p>Uma proposição é uma frase que pode ser avaliada como verdadeira (V) ou falsa (F). As proposições simples são conectadas por operadores lógicos formando proposições compostas.</p>
+            <table>
+                <thead>
+                    <tr><th>Operador</th><th>Conectivo</th><th>Símbolo</th><th>Leitura</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Negação</td><td>não</td><td>&#172;</td><td>Não P</td></tr>
+                    <tr><td>Conjunção</td><td>e</td><td>&#8743;</td><td>P e Q</td></tr>
+                    <tr><td>Disjunção inclusiva</td><td>ou</td><td>&#8744;</td><td>P ou Q</td></tr>
+                    <tr><td>Disjunção exclusiva</td><td>ou ... ou</td><td>&#8853;</td><td>Ou P ou Q</td></tr>
+                    <tr><td>Condicional</td><td>se ... então</td><td>&#8594;</td><td>Se P então Q</td></tr>
+                    <tr><td>Bicondicional</td><td>se e somente se</td><td>&#8596;</td><td>P se e somente se Q</td></tr>
+                </tbody>
+            </table>
+            <div class="highlight-box">
+                <strong>&#128161; Regra de ouro:</strong> O condicional <strong>é falso</strong> apenas quando a premissa (antecedente) é verdadeira e a conclusão (consequente) é falsa. Em todos os outros casos, é verdadeiro.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>&#128202; Tabela-Verdade</h3>
+            <p>A tabela-verdade permite avaliar o valor lógico de uma proposição composta a partir dos valores das proposições simples. Número de linhas = 2^n, em que n é o número de proposições simples.</p>
+            <table>
+                <thead>
+                    <tr><th>P</th><th>Q</th><th>P &#8743; Q</th><th>P &#8744; Q</th><th>P &#8594; Q</th><th>P &#8596; Q</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>V</td><td>V</td><td>V</td><td>V</td><td>V</td><td>V</td></tr>
+                    <tr><td>V</td><td>F</td><td>F</td><td>V</td><td>F</td><td>F</td></tr>
+                    <tr><td>F</td><td>V</td><td>F</td><td>V</td><td>V</td><td>F</td></tr>
+                    <tr><td>F</td><td>F</td><td>F</td><td>F</td><td>V</td><td>V</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-section">
+            <h3>&#11088; Tautologia, Contradição e Contingência</h3>
+            <ul>
+                <li><strong>Tautologia:</strong> proposição sempre verdadeira, independente dos valores das proposições simples.</li>
+                <li><strong>Contradição:</strong> proposição sempre falsa.</li>
+                <li><strong>Contingência:</strong> pode ser verdadeira ou falsa dependendo dos valores.</li>
+                <li><strong>Equivalências lógicas:</strong> P &#8594; Q &#8803; &#172;Q &#8594; &#172;P (contrapositiva) e P &#8594; Q &#8803; &#172;P &#8744; Q.</li>
+            </ul>
+            <div class="highlight-box success">
+                <strong>&#10004; Dica:</strong> Para verificar se uma proposição é tautológica, construa a tabela-verdade. Se a última coluna tiver apenas V, é tautologia.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>&#128218; Quantificadores e Diagramas</h3>
+            <ul>
+                <li><strong>Todo A é B</strong> - diagrama: círculo A dentro de B</li>
+                <li><strong>Nenhum A é B</strong> - diagrama: círculos disjuntos</li>
+                <li><strong>Algum A é B</strong> - diagrama: círculos que se interceptam</li>
+                <li><strong>Algum A não é B</strong> - diagrama: interceptação parcial</li>
+            </ul>
+            <p>Negue quantificadores da seguinte forma:</p>
+            <ul>
+                <li>&#172;(Todo A é B) &#8803; Algum A não é B</li>
+                <li>&#172;(Nenhum A é B) &#8803; Algum A é B</li>
+                <li>&#172;(Algum A é B) &#8803; Nenhum A é B</li>
+                <li>&#172;(Algum A não é B) &#8803; Todo A é B</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>&#129504; Sequências Lógicas</h3>
+            <p>As sequências podem envolver números, letras, figuras ou palavras. Identifique o padrão de formação, que pode ser adição, subtração, multiplicação, divisão, ou a combinação de padrões alternados.</p>
+            <p><strong>Exemplo:</strong> Qual termo completa a sequência 2, 6, 12, 20, 30, ___?</p>
+            <p>Observe: 6-2=4, 12-6=6, 20-12=8, 30-20=10. A diferença aumenta de 2 em 2, logo o próximo é 30+12 = <strong>42</strong>.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>&#128221; Questões</h3>
+            <div class="questao">
+                <span class="numero">1</span><span class="texto">Considere a proposição "Se hoje é sexta-feira, então amanhã é sábado". A negação lógica dessa proposição é:</span>
+                <div class="alternativas">
+                    <label><input type="radio" name="q1" value="a"> A) Hoje é sexta-feira e amanhã não é sábado.</label>
+                    <label><input type="radio" name="q1" value="b"> B) Hoje não é sexta-feira ou amanhã é sábado.</label>
+                    <label><input type="radio" name="q1" value="c"> C) Hoje não é sexta-feira e amanhã não é sábado.</label>
+                    <label><input type="radio" name="q1" value="d"> D) Se amanhã é sábado, então hoje é sexta-feira.</label>
+                    <label><input type="radio" name="q1" value="e"> E) Amanhã não é sábado.</label>
+                </div>
+            </div>
+            <div class="questao">
+                <span class="numero">2</span><span class="texto">A proposição "P &#8594; Q" é logicamente equivalente a:</span>
+                <div class="alternativas">
+                    <label><input type="radio" name="q2" value="a"> A) "&#172;P &#8744; Q".</label>
+                    <label><input type="radio" name="q2" value="b"> B) "P &#8743; &#172;Q".</label>
+                    <label><input type="radio" name="q2" value="c"> C) "Q &#8594; P".</label>
+                    <label><input type="radio" name="q2" value="d"> D) "&#172;P &#8743; Q".</label>
+                    <label><input type="radio" name="q2" value="e"> E) "P &#8596; Q".</label>
+                </div>
+            </div>
+            <h4 class="mt-20">Gabarito</h4>
+            <table>
+                <tr><th>Questão</th><th>Resposta</th></tr>
+                <tr><td>1</td><td>A) &#172;(P &#8594; Q) &#8803; P &#8743; &#172;Q</td></tr>
+                <tr><td>2</td><td>A) "&#172;P &#8744; Q" (regra da absorção do condicional)</td></tr>
+            </table>
+        </div>
+
+        <div class="highlight-box warning mt-20">
+            <strong>&#9888; Atenção:</strong> Treine muitas questões de sequências numéricas e proposições. São o carro-chefe desta matéria na FCC.
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>&#9878; TJSP 2027</h3>
+                <p>Portal de estudos dedicado a candidatos que desejam ser aprovados no concurso para Tribunal de Justiça do Estado de São Paulo. Materias organizadas, simulados e dicas de estudo.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Matérias</h3>
+                <ul>
+                    <li><a href="portugues.html">Português</a></li>
+                    <li><a href="constitucional.html">Constitucional</a></li>
+                    <li><a href="administrativo.html">Administrativo</a></li>
+                    <li><a href="penal.html">Penal</a></li>
+                    <li><a href="civil.html">Civil</a></li>
+                    <li><a href="informatica.html">Informática</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Links Úteis</h3>
+                <p><a href="https://www.tjsp.jus.br" target="_blank" style="color: var(--gold);">Site oficial TJSP</a></p>
+                <p><a href="https://www.fcc.org.br" target="_blank" style="color: var(--gold);">Fundação Carlos Chagas</a></p>
+                <p><a href="https://www.cebraspe.org.br" target="_blank" style="color: var(--gold);">Cebraspe</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>TJSP 2027 - Portal de Estudos para Concurso | Feito com <span class="heart">&#10084;</span> para estudantes</p>
+        </div>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>
